@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="main-container">
+    
+    <!-- Box 1: Game Title -->
+    <header class="main-header">
+      <h1 class="game--title">Tic Tac Toe</h1><br>
+    </header>
+
+    <div class="middle-layout">
+      <!-- Box 2: Game Area -->
+      <section class="left-side">
+        <h2 class="section-heading">Game Status</h2>
+        <div class="game--status">It's Player X's turn</div>
+        <div class="game--container">
+          <div data-cell-index="0" class="cell"></div>
+          <div data-cell-index="1" class="cell"></div>
+          <div data-cell-index="2" class="cell"></div>
+          <div data-cell-index="3" class="cell"></div>
+          <div data-cell-index="4" class="cell"></div>
+          <div data-cell-index="5" class="cell"></div>
+          <div data-cell-index="6" class="cell"></div>
+          <div data-cell-index="7" class="cell"></div>
+          <div data-cell-index="8" class="cell"></div>
+        </div>
+      </section>
+
+      <!-- Box 3: Scoreboard -->
+      <aside class="right-side">
+        <h2 class="section-heading">Scoreboard</h2>
+        <div class="scoreboard">
+          <p>Player X: <span id="score-x">0</span></p>
+          <p>Player O: <span id="score-o">0</span></p>
+          <p>Draws: <span id="score-draw">0</span></p>
+        </div>
+        <button class="game--restart">Restart Game</button>
+        <button class="score--reset">Reset Scores</button>
+      </aside>
+    </div>
+
+    <!-- Box 4: Winner Message -->
+    <footer class="winner-footer">
+      <div class="winner-message" id="winner-display">Let the best player win!</div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+<footer class="main-footer">
+  <p>&copy; 2025 VIDUSHI SRIVASTAVA. All rights reserved.</p>
+</footer>
+
+</html>
+
+

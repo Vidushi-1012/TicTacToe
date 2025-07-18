@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #8c52ff;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Box 1 - Title */
+.main-header .game--title {
+  font-size: 2.5rem;
+  margin-bottom: 0.3em;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+/* Box 2 & 3 - Side-by-side layout */
+.middle-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 2rem;
+}
+
+/* Game Status + Board */
+.left-side {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #8c52ff;
+}
+
+.game--status {
+  background-color: #ecf0f1;
+  color: #27ae60;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.game--container {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: #f4f4f4;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #d6eaf8;
+}
+
+/* Box 3 - Scoreboard */
+.right-side {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.scoreboard p {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.game--restart,
+.score--reset {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #8c52ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell.win {
+  background-color: #7bed9f;
+  animation: win-glow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes win-glow {
+  from { box-shadow: 0 0 8px #2ecc71; }
+  to { box-shadow: 0 0 20px #2ecc71; }
+}
+
+.game--restart:hover,
+.score--reset:hover {
+  background-color: #a974ff;
+}
+
+/* Box 4 - Footer */
+.winner-footer {
+  margin-top: 20px;
+}
+
+.winner-message {
+  background: #fff;
+  color: #8c52ff;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.main-footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #6a38c4;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-top: 20px;
+  border-top: 2px solid #fff;
+}
+

@@ -2,8 +2,8 @@
 
 A responsive, interactive Tic Tac Toe game built with **HTML5, CSS3, and Vanilla JavaScript**. Features dynamic gameplay, score tracking, and sleek animations.  
 
-![Tic Tac Toe Preview](https://via.placeholder.com/800x500.png?text=Tic+Tac+Toe+Game+Preview)  
-*(Replace with an actual screenshot or GIF of your game in action)*  
+<img width="1919" height="872" alt="TicTacToe" src="https://github.com/user-attachments/assets/e6c51f03-32c5-44ca-a4cc-c36fe434fd3a" />
+
 
 ---
 
@@ -24,13 +24,12 @@ A responsive, interactive Tic Tac Toe game built with **HTML5, CSS3, and Vanilla
    ```bash
    git clone https://github.com/your-username/tic-tac-toe.git
 
-🎮 How to Play
-    Players alternate clicking cells to place X or O.
-    First to align 3 symbols horizontally, vertically, or diagonally wins
-    If all cells fill without a winner, the game declares a draw.
+---
 
+## 🎮 How to Play
+   - Players alternate clicking cells to place X or O.
+   - First to align 3 symbols horizontally, vertically, or diagonally wins
+   - If all cells fill without a winner, the game declares a draw.
 
-📸 Snapshots
-<img width="1919" height="872" alt="TicTacToe" src="https://github.com/user-attachments/assets/e6c51f03-32c5-44ca-a4cc-c36fe434fd3a" />
 
 
